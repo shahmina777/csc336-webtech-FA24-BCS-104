@@ -1,0 +1,55 @@
+/* Custom Overrides for Curology Theme */
+
+
+
+/* Announcement Bar Color */
+.announcement-bar {
+  background-color: #7b51e3;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Custom Purple Button & Badge */
+.btn-purple, .bg-purple {
+  background-color: #7b51e3 !important;
+  border-color: #7b51e3 !important;
+}
+
+.btn-purple:hover {
+  background-color: #6439ca !important;
+}
+
+.text-purple {
+  color: #7b51e3 !important;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  background-color: #f7f5fa;
+}
+
+/* Product Card Styling */
+.product-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+}
+
+.product-detail-img {
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/* Make all main headings look blocky, heavy, and bold */
+h1, h2, h3, .card-title {
+  font-weight: 800 !important; /* Extra bold */
+  letter-spacing: -0.5px;     /* Tightens letters together for a solid, blocky look */
+}
