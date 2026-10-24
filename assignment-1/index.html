@@ -10,18 +10,19 @@
 
     <div class="resume-container">
         
-        <!-- left side -->
-        <div class="sidebar">
-            <div class="initials-box">
-                <h1>SZ</h1>
-            </div>
+        <!-- leftside -->
+        <aside class="sidebar">
+       
+           <div class="profile-img-container">
+    <img src="https://picsum.photos/200" alt="Shahmina Zia Profile Photo" class="profile-img">
+</div>
 
             <div class="sidebar-section">
                 <h3>CONTACT</h3>
-                <p>shahmina.01@email.com</p>
-                <p>+91 98 7654 3210</p>
+                <p><a href="mailto:shahmina.01@email.com">shahmina.01@email.com</a></p>
+                <p>+92 300 1234567</p>
                 <p>Lahore, Pakistan</p>
-                <p>linkedin.com/in/shahmina-w</p>
+                <p><a href="https://linkedin.com/in/shahmina-w" target="_blank">linkedin.com/in/shahmina-w</a></p>
             </div>
 
             <div class="sidebar-section">
@@ -29,9 +30,8 @@
                 <ul>
                     <li>Python, Java, C++</li>
                     <li>HTML, CSS, JavaScript</li>
-                    <li>React.js, Node.js</li>
                     <li>MySQL, MongoDB</li>
-                    <li>Git, GitHub, VS Code</li>
+                    <li>GitHub, VS Code</li>
                 </ul>
             </div>
 
@@ -44,22 +44,23 @@
             <div class="sidebar-section">
                 <h3>CERTIFICATES</h3>
                 <ul>
-                    <li>Google Data Analytics Certificate – Coursera</li>
+                    <li>Google Data Analytics – Coursera</li>
                     <li>Python for Everybody – Coursera</li>
                 </ul>
             </div>
-        </div>
+        </aside>
 
-        <!-- main content -->
-        <div class="main-content">
+        <!-- mainside-->
+        <main class="main-content">
             
             <header>
                 <h1>Shahmina Zia</h1>
-                <h2>Computer Science (Student)</h2>
+                <h2>Computer Science (5th Semester Student)</h2>
+                
                 <hr>
             </header>
 
-            <section>
+            <section id="summary">
                 <h3>SUMMARY</h3>
                 <p>
                     Highly motivated <strong>5th-semester Computer Science student</strong> with strong foundations in 
@@ -69,10 +70,10 @@
                 </p>
             </section>
 
-            <section>
+            <section id="experience">
                 <h3>EXPERIENCE / PROJECTS</h3>
                 
-                <div class="item">
+                <article class="item">
                     <h4>Student Developer | College Web App Project</h4>
                     <span class="date">2024 - Present</span>
                     <ul>
@@ -80,9 +81,9 @@
                         <li>Designed dynamic user interfaces and connected frontend components to backend REST APIs.</li>
                         <li>Optimized database queries in MySQL, improving response speed by 20%.</li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="item">
+                <article class="item">
                     <h4>Open Source Contributor | Academic Projects</h4>
                     <span class="date">2024 - 2025</span>
                     <ul>
@@ -90,10 +91,10 @@
                         <li>Implemented data structures like binary trees and graph algorithms for university assignments.</li>
                         <li>Fixed bugs and improved user interface styling across various group projects.</li>
                     </ul>
-                </div>
+                </article>
             </section>
 
-            <section>
+            <section id="education">
                 <h3>EDUCATION</h3>
                 <div class="item">
                     <h4>Bachelor of Science in Computer Science</h4>
@@ -102,7 +103,12 @@
                 </div>
             </section>
 
-        </div>
+          
+            <footer class="resume-footer">
+                <p>&copy; 2026 Shahmina Zia. Built with semantic HTML & CSS.</p>
+            </footer>
+
+        </main>
 
     </div>
 
