@@ -1,0 +1,142 @@
+
+:root {
+  --accent-color: hsl(28, 70%, 45%);
+}
+
+.bg-purple, .btn-purple {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.btn-purple:hover {
+  background-color: hsl(28, 70%, 38%) !important;
+}
+
+.text-purple {
+  color: var(--accent-color) !important;
+}
+
+.hero-section {
+  background-color: #f7f5fa;
+}
+
+.product-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+}
+
+.product-detail-img {
+  max-height: 400px;
+  object-fit: contain;
+}
+
+h1, h2, h3, .card-title {
+  font-weight: 800 !important;
+  letter-spacing: -0.5px;    
+}
+
+
+.mega-menu-container {
+  position: static;
+}
+
+@media (min-width: 604px) {
+  .mega-menu-container {
+    position: relative;
+  }
+  .mega-dropdown-panel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background: #ffffff;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
+    border-top: 1px solid #dee2e6;
+    padding: 2rem 4rem;
+    z-index: 1050;
+  }
+  .mega-menu-container:hover .mega-dropdown-panel,
+  .mega-menu-container:focus-within .mega-dropdown-panel {
+    display: block;
+  }
+}
+
+.mobile-accordion-menu {
+  display: block;
+}
+@media (min-width: 604px) {
+  .mobile-accordion-menu {
+    display: none;
+  }
+}
+
+
+.checkout-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 604px) {
+  .checkout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.form-group-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 604px) {
+  .form-group-grid {
+    grid-template-columns: 130px 1fr;
+    align-items: center;
+  }
+}
+
+input:user-invalid, select:user-invalid {
+  border-color: #dc3545 !important;
+}
+input:user-invalid + .invalid-feedback,
+select:user-invalid + .invalid-feedback {
+  display: block;
+}
+.invalid-feedback {
+  display: none;
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+
+.mini-cart-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 300px;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+  border-radius: 0.5rem;
+  z-index: 1100;
+  padding: 1rem;
+}
+.mini-cart-dropdown.show {
+  display: block;
+}
